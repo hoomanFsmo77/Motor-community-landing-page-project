@@ -1,4 +1,5 @@
 <template>
+  <Navbar/>
 
 </template>
 
@@ -6,11 +7,14 @@
 /////////// main style
 import '../style/App.scss';
 ////////// components
-
+import Navbar from "./components/Navbar.vue";
 
 
 export default {
-  name: "App"
+  name: "App",
+  components:{
+    Navbar
+  }
 }
 </script>
 

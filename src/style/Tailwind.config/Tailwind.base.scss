@@ -1,2 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "tailwindcss/base";
+
+
+@layer base {
+  h1{
+    @apply xlg:text-[2rem] lg:text-[1.9rem] md:text-[1.8rem] sm:text-[1.7rem] leading-[1.6];
+  }
+  h2{
+    @apply sm:text-[1.5rem] md:text-[1.6rem] lg:text-[1.7rem] xlg:text-[1.8rem] leading-[1.6];
+  }
+  h3{
+    @apply sm:text-[1.4rem] md:text-[1.5rem] lg:text-[1.6rem] xlg:text-[1.7rem] leading-[1.6];
+  }
+  h4{
+    @apply sm:text-[1.3rem] md:text-[1.4rem] lg:text-[1.5rem] xlg:text-[1.6rem] leading-[1.6];
+  }
+  h5{
+    @apply sm:text-[1.2rem] md:text-[1.3rem] lg:text-[1.4rem] xlg:text-[1.5rem] leading-[1.6];
+  }
+  h6{
+    @apply sm:text-[1.1rem] md:text-[1.2rem] lg:text-[1.3rem] xlg:text-[1.4rem] leading-[1.6];
+  }
+}

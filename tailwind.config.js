@@ -3,6 +3,7 @@ const plugin = require('tailwindcss/plugin')
 
 
 module.exports = {
+  darkMode:'class',
   content: ["./index.html","./src/javascript/*.vue","./src/javascript/components/*.vue"],
   theme: {
     screens: {
@@ -121,14 +122,14 @@ module.exports = {
     },
     fontWeight:{
       '100':'100',
-      '200':'100',
-      '300':'100',
-      '400':'100',
-      '500':'100',
-      '600':'100',
-      '700':'100',
-      '800':'100',
-      '900':'100'
+      '200':'200',
+      '300':'300',
+      '400':'400',
+      '500':'500',
+      '600':'600',
+      '700':'700',
+      '800':'800',
+      '900':'900'
     },
     lineHeight:{
       '1':'1',
@@ -170,7 +171,8 @@ module.exports = {
 
     extend:{
         colors:{
-
+            primary:'rgba(79, 70, 229)',
+          secondary:'rgba(243, 244, 246)'
         }
     }
   },
@@ -182,9 +184,6 @@ module.exports = {
           },
           'body':{
             overflowX:'hidden'
-          },
-          'h1,h2,h3,h4,h5,h6':{
-            lineHeight:'1.6'
           }
         })
       })

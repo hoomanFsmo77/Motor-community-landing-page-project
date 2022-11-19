@@ -1,1 +1,13 @@
 @import "tailwindcss/components";
+
+@layer components {
+  .btn{
+      @apply p-0.75 rounded-full leading-1 py-0.875 text-[0.9rem] font-500;
+  }
+  .btn-primary{
+    @apply bg-primary text-secondary hover:bg-secondary hover:text-[#333] transition-all;
+  }
+  .btn-secondary{
+    @apply hover:bg-primary hover:text-secondary bg-secondary text-[#333] transition-all;
+  }
+}
