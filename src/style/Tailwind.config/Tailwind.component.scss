@@ -10,4 +10,22 @@
   .btn-secondary{
     @apply hover:bg-primary hover:text-secondary bg-secondary text-[#333] transition-all;
   }
+  .navbar{
+    @apply lg:flex flex-row items-center  lg:static absolute lg:w-auto w-full lg:border-0 top-[80px] bg-[#fff] border-[#ccc] border-[1px] rounded-6 p-1 lg:p-0 left-0 dark:bg-gray-900;
+  }
+  .navbar_content{
+    @apply flex items-center lg:flex-row  flex-col-reverse lg:[&_li]:mx-1  [&_li]:p-[0.4] [&_a]:text-[0.9rem] [&_li]:transition-all  [&_li]:my-0.75 lg:[&_li]:my-0;
+  }
+  .navbar-item{
+      @apply hover:border-b-primary hover:border-b-[2px]  dark:text-white;
+  }
+  .navbar-item.active{
+    @apply border-b-primary border-b-[2px];
+  }
+  .dropdown{
+    @apply lg:absolute w-13 !p-0.5 [&_li]:!my-0.625 bg-white border-[#ccc] dark:border-gray-900 border-[1px] rounded-6 top-[38px] left-[-30px] static dark:bg-gray-700;
+  }
+  .dropdown-item{
+    @apply hover:text-primary dark:hover:text-primary transition-all lg:text-left text-center dark:text-white;
+  }
 }

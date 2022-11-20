@@ -4,7 +4,7 @@ const plugin = require('tailwindcss/plugin')
 
 module.exports = {
   darkMode:'class',
-  content: ["./index.html","./src/javascript/*.vue","./src/javascript/components/*.vue"],
+  content:  ["./index.html","./src/javascript/*.vue","./src/javascript/components/*.vue"],
   theme: {
     screens: {
       'sm': '500px',
@@ -13,6 +13,7 @@ module.exports = {
       'xlg':  '1200px'
     },
     spacing: {
+      '0':'0',
       '0.125':'0.125rem',
       '0.25':'0.25rem',
       '0.375':'0.375rem',
