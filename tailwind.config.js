@@ -1,5 +1,6 @@
 const colors = require('tailwindcss/colors')
 const plugin = require('tailwindcss/plugin')
+const theme = require("tailwindcss/defaultTheme");
 
 
 module.exports = {
@@ -172,8 +173,11 @@ module.exports = {
 
     extend:{
         colors:{
-            primary:'rgba(79, 70, 229)',
-          secondary:'rgba(243, 244, 246)'
+          primary:'rgba(79, 70, 229)',
+          secondary:'rgba(243, 244, 246)',
+          light:colors.gray["100"],
+          dark:colors.gray["900"],
+          dark2:colors.gray["700"]
         }
     }
   },

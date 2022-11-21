@@ -3,8 +3,11 @@
 
 
 @layer base {
+  p{
+      @apply  sm:text-[1rem] text-[0.9rem];
+  }
   h1{
-    @apply xlg:text-[2rem] lg:text-[1.9rem] md:text-[1.8rem] sm:text-[1.7rem] leading-[1.6];
+    @apply xlg:text-[2rem] lg:text-[1.9rem] md:text-[1.8rem] sm:text-[1.7rem] text-[1.5rem] leading-[1.6];
   }
   h2{
     @apply sm:text-[1.5rem] md:text-[1.6rem] lg:text-[1.7rem] xlg:text-[1.8rem] leading-[1.6];

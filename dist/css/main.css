@@ -362,7 +362,17 @@ body {
   overflow-x: hidden;
 }
 
+p {
+  font-size: 0.9rem;
+}
+
+@media (min-width: 500px) {
+  p {
+    font-size: 1rem;
+  }
+}
 h1 {
+  font-size: 1.5rem;
   line-height: 1.6;
 }
 
@@ -828,6 +838,10 @@ h6 {
   right: 0;
 }
 
+.bottom-2 {
+  bottom: 2rem;
+}
+
 .m-1 {
   margin: 1rem;
 }
@@ -835,6 +849,24 @@ h6 {
 .my-1 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mx-2 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.mr-0\.5 {
+  margin-right: 0.5rem;
+}
+
+.mr-0 {
+  margin-right: 0;
 }
 
 .ml-0\.75 {
@@ -853,12 +885,20 @@ h6 {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .w-full {
   width: 100%;
 }
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .items-center {
@@ -873,6 +913,49 @@ h6 {
   justify-content: space-between;
 }
 
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.border-\[1px\] {
+  border-width: 1px;
+}
+
+.border-primary {
+  --tw-border-opacity: 1;
+  border-color: rgb(79 70 229/var(--tw-border-opacity));
+}
+
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246/var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255/var(--tw-bg-opacity));
+}
+
+.fill-white {
+  fill: #fff;
+}
+
+.fill-secondary {
+  fill: rgb(243, 244, 246);
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
 .p-0\.75 {
   padding: 0.75rem;
 }
@@ -885,18 +968,22 @@ h6 {
   padding: 0.875rem;
 }
 
-.px-1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .px-1\.1 {
   padding-left: 1.1rem;
   padding-right: 1.1rem;
 }
 
-.pb-\[0\.7rem\] {
-  padding-bottom: 0.7rem;
+.px-1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .text-1\.4 {
@@ -911,16 +998,42 @@ h6 {
   font-size: 1.2rem;
 }
 
+.text-0\.75 {
+  font-size: 0.75rem;
+}
+
 .text-2 {
   font-size: 2rem;
 }
 
-.text-0\.625 {
-  font-size: 0.625rem;
+.text-2\.5 {
+  font-size: 2.5rem;
 }
 
-.text-0\.75 {
-  font-size: 0.75rem;
+.text-1\.1 {
+  font-size: 1.1rem;
+}
+
+.font-500 {
+  font-weight: 500;
+}
+
+.leading-1\.7 {
+  line-height: 1.7;
+}
+
+.leading-1 {
+  line-height: 1;
+}
+
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(79 70 229/var(--tw-text-opacity));
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81/var(--tw-text-opacity));
 }
 
 .shadow-xl {
@@ -937,9 +1050,27 @@ h6 {
   transition-duration: 150ms;
 }
 
-.dark .dark\:bg-gray-900 {
+.dark .dark\:bg-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39/var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-dark2 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81/var(--tw-bg-opacity));
+}
+
+.dark .dark\:fill-dark {
+  fill: #111827;
+}
+
+.dark .dark\:fill-dark2 {
+  fill: #374151;
+}
+
+.dark .dark\:text-light {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246/var(--tw-text-opacity));
 }
 
 .dark .dark\:text-white {
@@ -947,6 +1078,26 @@ h6 {
   color: rgb(255 255 255/var(--tw-text-opacity));
 }
 
+.dark .dark\:text-gray-50 {
+  --tw-text-opacity: 1;
+  color: rgb(249 250 251/var(--tw-text-opacity));
+}
+
+.dark .dark\:shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-ring-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-shadow);
+}
+
+@media (min-width: 768px) {
+  .md\:mx-4 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 @media (min-width: 968px) {
   .lg\:mx-1 {
     margin-left: 1rem;
@@ -956,11 +1107,21 @@ h6 {
     margin-top: 0;
     margin-bottom: 0;
   }
+  .lg\:mx-6 {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
   .lg\:hidden {
     display: none;
   }
   .lg\:w-auto {
     width: auto;
+  }
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 .\[\&_img\]\:mr-0\.75 img {
@@ -969,10 +1130,6 @@ h6 {
 /*!*******************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/style/App.scss ***!
   \*******************************************************************************************************************************************************/
-
-/*!*********************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/style/components/Navbar.scss ***!
-  \*********************************************************************************************************************************************************************/
 
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[8].use[0]!./src/javascript/components/Navbar.vue?vue&type=style&index=0&id=1d568000&scoped=true&lang=css ***!
