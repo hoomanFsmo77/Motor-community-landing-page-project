@@ -28,4 +28,7 @@
   .dropdown-item{
     @apply hover:text-primary dark:hover:text-primary transition-all lg:text-left text-center dark:text-white;
   }
+  .gallery-nav-active{
+    @apply border-b-2 border-b-primary;
+  }
 }
