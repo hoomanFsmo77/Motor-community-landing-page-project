@@ -2,6 +2,7 @@
   <Navbar/>
   <Introduction/>
   <Services/>
+  <Plan/>
 </template>
 
 <script>
@@ -11,12 +12,12 @@ import '../style/App.scss';
 import Navbar from "./components/Navbar.vue";
 import Introduction from "./components/Introduction.vue";
 import Services from "./components/Services.vue";
-
+import Plan from "./components/Plan.vue";
 
 export default {
   name: "App",
   components:{
-    Navbar,Introduction,Services
+    Navbar,Introduction,Services,Plan
   }
 }
 </script>
