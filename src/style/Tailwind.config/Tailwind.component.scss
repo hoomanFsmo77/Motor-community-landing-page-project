@@ -31,4 +31,10 @@
   .gallery-nav-active{
     @apply border-b-2 border-b-primary;
   }
+  .input{
+    @apply border-[1px] border-gray-500 rounded-8 dark:border-[1px] dark:border-gray-300 dark:bg-dark2 p-0.5 focus:ring-4 focus:ring-primary/50 focus-visible:outline-none focus:border-none transition-all placeholder:text-gray-400 dark:text-light;
+  }
+}
+#app{
+  @apply bg-white dark:bg-dark;
 }
