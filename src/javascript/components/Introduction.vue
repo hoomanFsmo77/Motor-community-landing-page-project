@@ -1,7 +1,7 @@
 <template>
   <section id="intro" class="dark:bg-dark">
       <div class="container grid grid-cols-1 lg:grid-cols-2  items-center p-1">
-        <div>
+        <div data-aos-delay="400" data-aos="fade-up">
           <h1 class="my-1 font-500 dark:text-light">Lorem ipsum dolor <span class="text-primary">sit amet</span></h1>
           <p class="text-justify font-500 leading-1.7 dark:text-light">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores esse et illum libero minus nihil numquam velit vitae? Distinctio excepturi in ipsam laboriosam mollitia odit, officiis optio pariatur sit totam!
@@ -12,7 +12,7 @@
           </div>
 
         </div>
-        <div class="flex justify-center p-1">
+        <div data-aos-delay="600" data-aos="fade-up" class="flex justify-center p-1">
           <img src="../../assets/motor.svg" width="450" alt="">
         </div>
       </div>

@@ -1,5 +1,5 @@
 <template>
-  <div :class="fullColor && ['!bg-primary','[&_h2]:text-light','[&_h3]:text-light','[&_h6]:text-light','[&_span]:text-light']" class="plan-card border-[1px] border-primary p-1.4 rounded-8 border-t-8 dark:bg-dark2 group" >
+  <div :data-aos-delay="delay" data-aos="flip-left" :class="fullColor && ['!bg-primary','[&_h2]:text-light','[&_h3]:text-light','[&_h6]:text-light','[&_span]:text-light']" class="plan-card border-[1px] border-primary p-1.4 rounded-8 border-t-8 dark:bg-dark2 group" >
       <h2 class="text-dark dark:text-light text-center text-1.5">{{title}}</h2>
     <h3 class="text-dark dark:text-light text-center my-0.75 text-1.5">{{price}}</h3>
     <div class="flex justify-center">
@@ -20,7 +20,7 @@
 <script>
 export default {
   name: "PlanCard",
-  props:['title','price','period','fullColor','contentTitle','content1','content2','content3']
+  props:['title','price','period','fullColor','contentTitle','content1','content2','content3','delay']
 }
 </script>
 

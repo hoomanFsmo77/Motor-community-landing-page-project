@@ -1,11 +1,11 @@
 <template>
   <section id="services" class="bg-secondary dark:bg-dark2">
     <div class="container">
-      <div>
+      <div data-aos="fade-up" data-aos-delay="200">
         <h2 class="text-center dark:text-light">Lorem ipsum <span class="text-primary ">dolor sit amet</span></h2>
         <p class="text-center text-gray-700 my-1 dark:text-gray-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet assumenda at impedit sed?</p>
       </div>
-      <div class="my-2 grid gap-2 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:mx-6 md:mx-4 mx-2">
+      <div data-aos="zoom-in" data-aos-delay="400" class="my-2 grid gap-2 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:mx-6 md:mx-4 mx-2">
         <ServiceCard v-for="item in serviceCardInfo"
                      :ket="item.id"
                      :icon="item.icon"

@@ -2,7 +2,7 @@
   <section id="contact" class=" relative top-[-33px]">
     <div class="container">
       <div class="grid lg:grid-cols-[1.5fr_3fr] grid-cols-1  lg:mx-12 md:mx-7 mx-2">
-        <div>
+        <div data-aos="fade-up" data-aos-delay="400" >
           <h2 class="dark:text-light">Lorem ipsum dolor <span class="text-primary">sit amet.</span></h2>
           <p class="dark:text-light my-1.4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea facilis magnam nam sequi, suscipit tempore!</p>
           <div>
@@ -16,7 +16,7 @@
           <button class="btn btn-primary mt-1">Send Message</button>
 
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="600" >
           <img src="../../assets/contact.svg" alt="">
         </div>
       </div>
